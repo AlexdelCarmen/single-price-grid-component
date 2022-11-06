@@ -1,29 +1,90 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 :root {
-    --main-color1: hsl(179, 62%, 43%); 
-    --main-color2: hsl(71, 73%, 54%); 
-    --neutral-color1: hsl(204, 43%, 93%);
-    --neutral-color2: hsl(218, 22%, 67%); 
-    --main-font: 'Karla', sans-serif;
-    --title-size: 24px; 
-    --para-size:  16px; 
-    --mobile-width: 375px; 
-    --desktop-width: 1440px; 
+  --main-color1: hsl(179, 62%, 43%);
+  --main-color2: hsl(71, 73%, 54%);
+  --neutral-color1: hsl(204, 43%, 93%);
+  --neutral-color2: hsl(218, 22%, 67%);
+  --main-font: "Karla", sans-serif;
+  --title-size: 24px;
+  --para-size: 16px;
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    background-color: var(--neutral-color1);
-    font-family: var(--main-font);
-    font-size: var(--para-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--neutral-color1);
+  font-family: var(--main-font);
+  font-size: var(--para-size);
 }
 
+.component {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--mobile-width);
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+
+.card2, .card3 {
+    background-color: var(--main-color1);
+}
+
+.card3 {
+    opacity: 0.8;
+}
+
+.card {
+    min-width: 100%;
+    padding: 0.5rem 1.5rem;
+}
+
+.card-text {
+    line-height: 30px;
+}
+
+/* Card 1 styles */
+
+.card1 {
+    background-color: #fff;
+}
+
+.card1 > .card-title {
+    color: var(--main-color1);
+}
+
+.green {
+    font-weight: 700;
+    color: var(--main-color2) !important;
+    padding-right: 0.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.card1 > .card-text {
+    color: var(--neutral-color2);
+}
+
+
+
+/* attribution or footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
