@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+::root {
+    --main-color1: hsl(179, 62%, 43%); 
+    --main-color2: hsl(71, 73%, 54%); 
+    --neutral-color1: hsl(204, 43%, 93%);
+    --neutral-color2: hsl(218, 22%, 67%); 
+    --main-font: 'Karla', sans-serif;
+    --title-size: 24px; 
+    --para-size:  16px; 
+    --mobile-width: 375px; 
+    --desktop-width: 1440px; 
+}
+
