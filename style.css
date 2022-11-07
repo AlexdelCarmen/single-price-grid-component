@@ -135,6 +135,42 @@ li {
     color: var(--neutral-color1);
 }
 
+/* desktop layout media query */
+
+@media screen and (min-width: 800px){
+    .component {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40% 60%;
+        max-width: 800px;
+    }
+
+    .card {
+        min-height: 100%;
+        padding: 1rem 3rem;
+    }
+
+    .card1 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .card2 {
+        grid-area: 2 / 1 / 2 / 2;
+    }
+
+    .card1 > .card-text {
+        padding-right: 10rem;
+    }
+
+    .green {
+        font-size: 20px;    
+        margin-bottom: unset;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+}
+
 /* attribution or footer */
 
 .attribution {
