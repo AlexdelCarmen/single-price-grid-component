@@ -90,7 +90,8 @@ body {
 }
 
 .dim {
-  color: var(--neutral-color2) !important;
+  color: var(--neutral-color1);
+  opacity: 0.8;
 }
 
 .card2 > .card-text {
